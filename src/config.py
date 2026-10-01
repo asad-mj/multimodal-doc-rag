@@ -1,5 +1,5 @@
 import os
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Multimodal Enterprise Document RAG"
@@ -9,7 +9,6 @@ class Settings(BaseSettings):
     COLLECTION_NAME: str = os.getenv("COLLECTION_NAME", "multimodal_docs")
     TOP_K_RESULTS: int = int(os.getenv("TOP_K_RESULTS", 4))
     
-    class Config:
-        env_file = ".env"
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 settings = Settings()
