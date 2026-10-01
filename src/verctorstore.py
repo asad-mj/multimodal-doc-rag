@@ -1,6 +1,5 @@
 import os
 import chromadb
-from chromadb.config import Settings as ChromaSettings
 from typing import List, Dict, Any
 from src.schemas import DocumentChunk
 from src.config import settings
