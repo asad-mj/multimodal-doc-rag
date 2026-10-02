@@ -43,3 +43,39 @@ Benchmarked against unstructured enterprise financial filings (10-K filings, 80+
 | **Context Faithfulness** | **0.96** | 0.89 | RAGAS metric verifying zero hallucinations outside source text |
 | **Table Extraction Accuracy**| **98.1%** | 80.0% | Markdown matrix cell alignment vs raw source PDF |
 | **Inference Latency (p95)** | **1.14s** | 2.50s | ChromaDB vector query + local context compilation |
+## 🛠️ Execution & Deployment Guide
+
+### Option 1: Live Cloud Demo
+Test the production application immediately without installation:
+👉 **[Launch Interactive Web Interface](https://your-deployment-link.streamlit.app)**
+
+---
+
+### Option 2: Docker Single-Command Deployment (Zero Configuration)
+Requirements: [Docker Desktop](https://www.docker.com/)
+
+```bash
+# Pull and run the verified container directly
+docker run -d -p 8000:8000 -p 8501:8501 --name project-instance ghcr.io/asad-mj/REPO_NAME:latest
+
+# Access the services:
+# API & Swagger UI: http://localhost:8000/docs
+# Interactive Web UI: http://localhost:8501
+## 🛠️ Execution & Deployment Guide
+
+### Option 1: Live Cloud Demo
+Test the production application immediately without installation:
+👉 **[Launch Interactive Web Interface](https://your-deployment-link.streamlit.app)**
+
+---
+
+### Option 2: Docker Single-Command Deployment (Zero Configuration)
+Requirements: [Docker Desktop](https://www.docker.com/)
+
+```bash
+# Pull and run the verified container directly
+docker run -d -p 8000:8000 -p 8501:8501 --name project-instance ghcr.io/asad-mj/REPO_NAME:latest
+
+# Access the services:
+# API & Swagger UI: http://localhost:8000/docs
+# Interactive Web UI: http://localhost:8501
