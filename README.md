@@ -61,21 +61,7 @@ docker run -d -p 8000:8000 -p 8501:8501 --name project-instance ghcr.io/asad-mj/
 # Access the services:
 # API & Swagger UI: http://localhost:8000/docs
 # Interactive Web UI: http://localhost:8501
-## 🛠️ Execution & Deployment Guide
-
-### Option 1: Live Cloud Demo
-Test the production application immediately without installation:
-👉 **[Launch Interactive Web Interface](https://your-deployment-link.streamlit.app)**
-
----
-
-### Option 2: Docker Single-Command Deployment (Zero Configuration)
-Requirements: [Docker Desktop](https://www.docker.com/)
-
-```bash
-# Pull and run the verified container directly
-docker run -d -p 8000:8000 -p 8501:8501 --name project-instance ghcr.io/asad-mj/REPO_NAME:latest
-
-# Access the services:
-# API & Swagger UI: http://localhost:8000/docs
-# Interactive Web UI: http://localhost:8501
+```markdown
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Loom Walkthrough](https://img.shields.io/badge/Loom-Video_Walkthrough-9263E2?style=flat-square&logo=loom)](https://loom.com/share/YOUR_LOOM_ID)
+[![Docker Image](https://img.shields.io/badge/Docker-Container_Ready-2496ED?style=flat-square&logo=docker)](https://hub.docker.com)
